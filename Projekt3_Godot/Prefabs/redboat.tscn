@@ -14,10 +14,10 @@ albedo_color = Color(0.764706, 0, 0.203922, 1)
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_7w3ue"]
 properties/0/path = NodePath(".:position")
-properties/0/spawn = true
+properties/0/spawn = false
 properties/0/replication_mode = 1
 properties/1/path = NodePath(".:rotation")
-properties/1/spawn = true
+properties/1/spawn = false
 properties/1/replication_mode = 1
 
 [node name="Boat" type="MeshInstance3D"]

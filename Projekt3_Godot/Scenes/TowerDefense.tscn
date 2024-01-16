@@ -77,7 +77,21 @@ text = "Player 2"
 
 [node name="Players" type="Node3D" parent="."]
 
-[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+[node name="PlayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("res://Prefabs/Player.tscn")
 spawn_path = NodePath("../Players")
 spawn_limit = 2
+
+[node name="RedBoats" type="Node3D" parent="."]
+
+[node name="GreenBoats" type="Node3D" parent="."]
+
+[node name="RedBoatSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://Prefabs/redboat.tscn")
+spawn_path = NodePath("../RedBoats")
+spawn_limit = 50
+
+[node name="GreenBoatSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://Prefabs/greenboat.tscn")
+spawn_path = NodePath("../GreenBoats")
+spawn_limit = 50

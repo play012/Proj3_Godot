@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=3 uid="uid://t43bi22nmdbb"]
+
+[ext_resource type="ArrayMesh" uid="uid://bueighj6mwkw8" path="res://Models/boat.obj" id="1_of2u0"]
+[ext_resource type="Script" path="res://Scripts/redboat.gd" id="2_j7hg1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3tqyh"]
+albedo_color = Color(1, 0.254902, 0.235294, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shx84"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5dbnj"]
+albedo_color = Color(0.666667, 0, 0.227451, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0fq1c"]
+albedo_color = Color(0.666667, 0, 0.227451, 1)
+
+[node name="Boat" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0625013, 0, 0.344386)
+mesh = ExtResource("1_of2u0")
+surface_material_override/0 = SubResource("StandardMaterial3D_3tqyh")
+surface_material_override/1 = SubResource("StandardMaterial3D_shx84")
+surface_material_override/4 = SubResource("StandardMaterial3D_5dbnj")
+surface_material_override/5 = SubResource("StandardMaterial3D_0fq1c")
+script = ExtResource("2_j7hg1")

@@ -1,0 +1,64 @@
+# Blender 4.0.0 Release Candidate MTL File: 'None'
+# www.blender.org
+
+newmtl _Barrel_ExplosiveBarrel
+Ns 96.078392
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/PC/Downloads/Barrel_Explosive_obj/Barrel Explosive/C:/Users/user/Desktop/Barrel Explosive/textures/Barrel_Ex_diff.tga
+map_Bump C:/Users/PC/Downloads/Barrel_Explosive_obj/Barrel Explosive/C:/Users/user/Desktop/Barrel Explosive/textures/Barrel_Ex_norm.tga
+
+newmtl _Barrel_ExplosiveBarrel.001
+Ns 96.078392
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/PC/Downloads/Barrel_Explosive_obj/Barrel Explosive/C:/Users/user/Desktop/Barrel Explosive/textures/Barrel_Ex_diff.tga
+map_Bump C:/Users/PC/Downloads/Barrel_Explosive_obj/Barrel Explosive/C:/Users/user/Desktop/Barrel Explosive/textures/Barrel_Ex_norm.tga
+
+newmtl aiStandardSurface10SG
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+
+newmtl aiStandardSurface1SG
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+
+newmtl aiStandardSurface20SG
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1
+
+newmtl aiStandardSurface41SG
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 0.000000
+d 1.000000
+illum 1

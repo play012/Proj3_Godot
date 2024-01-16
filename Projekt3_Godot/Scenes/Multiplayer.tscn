@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://knwgiqbm06qj"]
+
+[ext_resource type="Script" path="res://Scripts/multiplayer.gd" id="1_bme4a"]
+[ext_resource type="Texture2D" uid="uid://tqy0icc06f85" path="res://Textures/panelBackground.png" id="3_onu4y"]
+
+[node name="Multiplayer" type="Node"]
+script = ExtResource("1_bme4a")
+
+[node name="Level" type="Node" parent="."]
+
+[node name="LevelSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://Scenes/TowerDefense.tscn")
+spawn_path = NodePath("../Level")
+spawn_limit = 1
+
+[node name="ControlPanel" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="TextureRect" parent="ControlPanel"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("3_onu4y")
+expand_mode = 3
+
+[node name="hostButton" type="Button" parent="ControlPanel"]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 300.0
+offset_right = 750.0
+offset_bottom = 350.0
+text = "Host Game"
+
+[node name="joinButton" type="Button" parent="ControlPanel"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 300.0
+offset_right = 550.0
+offset_bottom = 350.0
+text = "Join Game"
+
+[node name="ipAddress" type="LineEdit" parent="ControlPanel/joinButton"]
+layout_mode = 0
+offset_top = -80.0
+offset_right = 350.0
+offset_bottom = -30.0
+placeholder_text = "Hosts IP address"
+
+[connection signal="pressed" from="ControlPanel/hostButton" to="." method="on_host_pressed"]
+[connection signal="pressed" from="ControlPanel/joinButton" to="." method="on_connect_pressed"]

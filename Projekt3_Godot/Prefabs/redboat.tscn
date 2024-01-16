@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://t43bi22nmdbb"]
+
+[ext_resource type="ArrayMesh" uid="uid://bueighj6mwkw8" path="res://Models/boat.obj" id="1_of2u0"]
+[ext_resource type="Script" path="res://Scripts/redboat.gd" id="2_j7hg1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i8iej"]
+albedo_color = Color(0.764706, 0, 0.203922, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s0s74"]
+albedo_color = Color(0.764706, 0, 0.203922, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ij5qu"]
+albedo_color = Color(0.764706, 0, 0.203922, 1)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_7w3ue"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
+[node name="Boat" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0625013, 0, 0.344386)
+mesh = ExtResource("1_of2u0")
+surface_material_override/0 = SubResource("StandardMaterial3D_i8iej")
+surface_material_override/1 = SubResource("StandardMaterial3D_s0s74")
+surface_material_override/2 = SubResource("StandardMaterial3D_ij5qu")
+script = ExtResource("2_j7hg1")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_7w3ue")
